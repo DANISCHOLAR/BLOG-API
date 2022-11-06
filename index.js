@@ -30,7 +30,7 @@ app.use('/blogs', authentication, BlogRouter)
 
 //  ----- API Home Route ---------
 app.get('/blog', controller.homeRoute)
-app.get('/:id', controller.getAPublishedBlog)
+app.get('/blog/:id', controller.getAPublishedBlog)
 
 //  -------- Get All Routes ----
 app.get('*', (req, res) => {
@@ -51,3 +51,5 @@ const PORT = process.env.PORT
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`)
 })
+
+module.exports = app;

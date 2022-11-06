@@ -152,31 +152,6 @@ async function getAllBlogs(req, res) {
 }
 
 // the owner of the blog should be able to update the state of the blog
-// async function updateBlogState(req, res) {
-//   const newState = req.body;
-//   const id = req.params.id;
-
-//   const user = decryptToken(req, res);
-
-//   await BlogModel.findOneAndUpdate({ author_id: user._id, id: id }, newState, {
-//     new: true,
-//   })
-//     .then((blog) => {
-//       if (blog == null) {
-//         return res.send("Unauthorized");
-//       } else {
-//         res.status(200).json({
-//           message: "Success!, You have updated the Blog State",
-//           blog,
-//         });
-//       }
-//     })
-//     .catch((err) => {
-//       console.log(err);
-//       res.send(err.message);
-//     });
-// }
-
 async function updateBlogState(req, res) {
   const blog_Id = req.params.id;
   const detailsToUpdate = req.body;

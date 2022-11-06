@@ -76,7 +76,7 @@ This is an api for a Blog App. The API has a general endpoint that shows a list 
 - To search by author: Both first name and last name are required. `e.g. kyle xy`
 - You can order your search results by read count, reading time, or timestamp in `asc or desc order`
 - Add read_count, reading_time, or timestamp to your query with value of either `asc or desc`
-<!-- You can request for a single blog by specifying the id of the blog. When you do, the read count of the blog will be increased by 1. [e.g. http://localhost:3333/api/6360711fd485dae577d39afa] -->
+- `You can request for a single blog by specifying the id of the blog. When you do, the read count of the blog will be increased by 1. [e.g. http://localhost:5000/blog/6360711fd485dae577d39afa]`
 
 ### Signup User Endpoint
 
