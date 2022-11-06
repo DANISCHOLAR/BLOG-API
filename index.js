@@ -33,9 +33,9 @@ app.get('/blog', controller.homeRoute)
 app.get('/blog/:id', controller.getAPublishedBlog)
 
 //  -------- Get All Routes ----
-app.get('*', (req, res) => {
-    res.status(404)
-    res.send('404 Not Found')
+app.get('/', (req, res) => {
+    res.status(200)
+    res.send('Welcome to the Blogging APP, To access the endpoint please use the route (/blog)')
 })
 
 
