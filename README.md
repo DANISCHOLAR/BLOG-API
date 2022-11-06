@@ -1,8 +1,6 @@
 # BLOG App
 This is an api for a Blog App. The API has a general endpoint that shows a list of articles that have been created by different people.
 
----
-## Installation
 
  
 ---
